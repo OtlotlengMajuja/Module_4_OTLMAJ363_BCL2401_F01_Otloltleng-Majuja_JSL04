@@ -33,7 +33,12 @@ console.log(message);
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
+
+if (heartRate < 100) {
+    console.log("Boost needed!");
+} else {
+    console.log("Energy levels are high!")
+}
 
 
 // #### Challenge 4: Temperature Suitability
