@@ -5,7 +5,6 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-console.log(``);
 
 if (userPreference === 'Sugar-free') {
     console.log('You prefer Sugar-free Monster Energy drink.');
@@ -18,11 +17,11 @@ if (userPreference === 'Sugar-free') {
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
 let cansLeft = 3; // Any number of cans
-console.log(``);
 
-stocklevel >= 5 ? "We're stocked!" : "Time to restock!"
+let message = (cansLeft < 5) ? "Time to restock!" : "We're stocked!";
+console.log(message);
 
-/* if (stocklevel >= 5) {
+/* if (cansLeft >= 5) {
     console.log("We're stocked!")
 } else {
     console.log("Time to restock!")
