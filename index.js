@@ -7,6 +7,12 @@
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
 console.log(``);
 
+if (userPreference === 'Sugar-free') {
+    console.log('You prefer Sugar-free Monster Energy drink.');
+} else {
+    console.log('You prefer Regular Monster Energy drink.');
+}
+
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
@@ -14,6 +20,14 @@ console.log(``);
 let cansLeft = 3; // Any number of cans
 console.log(``);
 
+stocklevel >= 5 ? "We're stocked!" : "Time to restock!"
+
+/* if (stocklevel >= 5) {
+    console.log("We're stocked!")
+} else {
+    console.log("Time to restock!")
+}
+*/
 
 // #### Challenge 3: Workout Intensity
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
@@ -37,7 +51,7 @@ console.log(``);
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22; 
+let currentHour = 22;
 
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
@@ -48,6 +62,6 @@ let currentHour = 22;
 
 
 
-// In each of these challenges, the ternary operator is used to decide between two options based on a condition, 
-// demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct, 
+// In each of these challenges, the ternary operator is used to decide between two options based on a condition,
+// demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct,
 // they should be used judiciously to maintain readability, especially for more complex conditions.
